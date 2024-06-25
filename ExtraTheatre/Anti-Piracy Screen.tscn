@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://BingosBadestSounds/32MoneyStole.ogg" type="AudioStream" id=1]
+[ext_resource path="res://MAMAnimasionsForBuyer/RedBallSleeping.png" type="Texture" id=2]
+[ext_resource path="res://font48.tres" type="DynamicFont" id=3]
+[ext_resource path="res://font24.tres" type="DynamicFont" id=4]
+
+[node name="Anti-Piracy Screen" type="Node2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+pitch_scale = 0.08
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 531.0
+margin_bottom = 129.0
+custom_fonts/font = ExtResource( 3 )
+text = "Pirate Detected!"
+
+[node name="Label2" type="Label" parent="."]
+margin_top = 160.0
+margin_right = 735.0
+margin_bottom = 337.0
+custom_fonts/font = ExtResource( 4 )
+text = "You've Downloaded an Illegal copy Of Zakariae's
+First Game, Please Report the Site Where
+ You Found it to Zakariae by E-mail zikozak2011@hotmail.com
+Then Download The Safe one in
+ https://zakariae.infinityfreeapp.com/"
+align = 1
+
+[node name="RedBallSleeping" type="Sprite" parent="."]
+position = Vector2( 384, 512 )
+scale = Vector2( 11, 11 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 0, 32, 32 )

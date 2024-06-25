@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://REAL BUTT ENEMIES/HitBoux.tscn" type="PackedScene" id=2]
+
+[node name="Bike" type="Node2D"]
+scale = Vector2( 128, 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+offset = Vector2( 8, -16 )
+
+[node name="HitBoux" parent="." instance=ExtResource( 2 )]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HitBoux"]
+polygon = PoolVector2Array( 16, -32, 0, -32, 0, 0, 16, 0 )

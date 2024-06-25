@@ -1,0 +1,137 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://REAL BUTT ENEMIES/HitBoux.tscn" type="PackedScene" id=1]
+[ext_resource path="res://REAL BUTT ENEMIES/Boux....png" type="Texture" id=2]
+[ext_resource path="res://REAL BUTT ENEMIES/Boux....gd" type="Script" id=3]
+[ext_resource path="res://REAL BUTT ENEMIES/BoxDed.png" type="Texture" id=4]
+[ext_resource path="res://BingosBadestSounds/StompBox.ogg" type="AudioStream" id=5]
+
+[sub_resource type="Curve2D" id=19]
+_data = {
+"points": PoolVector2Array(  )
+}
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 2 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 4 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 4 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 4 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"loop": true,
+"name": "...",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 24 ), SubResource( 24 ), SubResource( 24 ), SubResource( 24 ), SubResource( 24 ), SubResource( 24 ), SubResource( 24 ) ],
+"loop": false,
+"name": "Died",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 16, 12 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 12.75, 3.75 )
+
+[sub_resource type="Animation" id=7]
+resource_name = "AAAAAAAAAAAA"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="BouxHUH" type="Path2D"]
+scale = Vector2( 2, 2 )
+curve = SubResource( 19 )
+script = ExtResource( 3 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+rotate = false
+
+[node name="idk" type="Node2D" parent="PathFollow2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PathFollow2D/idk"]
+frames = SubResource( 5 )
+animation = "..."
+frame = 39
+playing = true
+
+[node name="HitBoux" parent="PathFollow2D/idk" instance=ExtResource( 1 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/idk/HitBoux"]
+position = Vector2( 0, 4 )
+shape = SubResource( 17 )
+
+[node name="Area2D" type="Area2D" parent="PathFollow2D/idk"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/idk/Area2D"]
+position = Vector2( 0.25, -14.75 )
+shape = SubResource( 18 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "AAAAAAAAAAAA"
+anims/AAAAAAAAAAAA = SubResource( 7 )
+
+[node name="DED" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="body_entered" from="PathFollow2D/idk/Area2D" to="." method="_on_Area2D_body_entered"]

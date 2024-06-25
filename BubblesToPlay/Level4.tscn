@@ -1,0 +1,159 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Spacetoon.tscn" type="PackedScene" id=1]
+[ext_resource path="res://HotTimesInLavalavaCourse.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Empty.png" type="Texture" id=3]
+[ext_resource path="res://BubblePasswords/LevelLAVA.gd" type="Script" id=4]
+[ext_resource path="res://InTEMAcTABles/SUB AREA.tscn" type="PackedScene" id=5]
+[ext_resource path="res://REAL BUTT ENEMIES/TheInvincibleWall.tscn" type="PackedScene" id=6]
+[ext_resource path="res://REAL BUTT ENEMIES/Dwomb.tscn" type="PackedScene" id=7]
+[ext_resource path="res://BingosBadestSounds/Ded.ogg" type="AudioStream" id=8]
+[ext_resource path="res://ANOTHER-Ichara.png" type="Texture" id=9]
+[ext_resource path="res://font21.tres" type="DynamicFont" id=10]
+
+[node name="Level4" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="Player" parent="." index="0"]
+position = Vector2( 192, 128 )
+
+[node name="TileMap" parent="." index="3"]
+tile_data = PoolIntArray( -327638, 2, 0, -327637, 2, 1, -327636, 2, 1, -327635, 2, 1, -327634, 2, 1, -327633, 2, 2, -262102, 2, 65536, -262101, 2, 65537, -262100, 2, 65537, -262099, 2, 65537, -262098, 2, 65537, -262097, 2, 65538, -196566, 2, 65536, -196565, 2, 65537, -196564, 2, 65537, -196563, 2, 65537, -196562, 2, 65537, -196561, 2, 65538, -131030, 2, 65536, -131029, 2, 65537, -131028, 2, 65537, -131027, 2, 65537, -131026, 2, 65537, -131025, 2, 65538, -65519, 2, 0, -65518, 2, 2, -65515, 2, 0, -65514, 2, 2, -65511, 2, 0, -65510, 2, 2, -65507, 2, 131075, -65494, 2, 65536, -65493, 2, 65537, -65492, 2, 65537, -65491, 2, 65537, -65490, 2, 65537, -65489, 2, 65538, 17, 2, 65536, 18, 2, 65538, 21, 2, 65536, 22, 2, 65538, 25, 2, 65536, 26, 2, 65538, 29, 2, 131076, 42, 2, 65536, 43, 2, 65537, 44, 2, 65537, 45, 2, 65537, 46, 2, 65537, 47, 2, 65538, 65553, 2, 65536, 65554, 2, 65538, 65557, 2, 65536, 65558, 2, 65538, 65561, 2, 65536, 65562, 2, 65538, 65565, 2, 131076, 65578, 2, 65536, 65579, 2, 65537, 65580, 2, 65537, 65581, 2, 65537, 65582, 2, 65537, 65583, 2, 65538, 196607, 2, 0, 131072, 2, 1, 131073, 2, 1, 131074, 2, 1, 131075, 2, 1, 131076, 2, 1, 131077, 2, 1, 131078, 2, 2, 131089, 2, 65536, 131090, 2, 3, 131091, 2, 1, 131092, 2, 1, 131093, 2, 4, 131094, 2, 3, 131095, 2, 1, 131096, 2, 1, 131097, 2, 4, 131098, 2, 3, 131099, 2, 1, 131100, 2, 1, 131101, 2, 65540, 131114, 2, 65536, 131115, 2, 65537, 131116, 2, 65537, 131117, 2, 65537, 131118, 2, 65537, 131119, 2, 65538, 262143, 2, 65536, 196608, 2, 65537, 196609, 2, 65537, 196610, 2, 65537, 196611, 2, 65537, 196612, 2, 65537, 196613, 2, 65537, 196614, 2, 65538, 196621, 2, 0, 196622, 2, 1, 196623, 2, 1, 196624, 2, 1, 196625, 2, 4, 196626, 2, 65537, 196627, 2, 65537, 196628, 2, 65537, 196629, 2, 65537, 196630, 2, 65537, 196631, 2, 65537, 196632, 2, 65537, 196633, 2, 65537, 196634, 2, 65537, 196635, 2, 65537, 196636, 2, 65537, 196637, 2, 65538, 196650, 2, 65536, 196651, 2, 65537, 196652, 2, 65537, 196653, 2, 65537, 196654, 2, 65537, 196655, 2, 65538, 327679, 2, 65536, 262144, 2, 65537, 262145, 2, 65537, 262146, 2, 65537, 262147, 2, 65537, 262148, 2, 65537, 262149, 2, 65537, 262150, 2, 65538, 262157, 2, 65536, 262158, 2, 65537, 262159, 2, 65537, 262160, 2, 65537, 262161, 2, 65537, 262162, 2, 65537, 262163, 2, 65537, 262164, 2, 65537, 262165, 2, 65537, 262166, 2, 65537, 262167, 2, 65537, 262168, 2, 65537, 262169, 2, 65537, 262170, 2, 65537, 262171, 2, 65537, 262172, 2, 65537, 262173, 2, 65538, 262186, 2, 65536, 262187, 2, 65537, 262188, 2, 65537, 262189, 2, 65537, 262190, 2, 65537, 262191, 2, 65538, 393215, 2, 65536, 327680, 2, 65537, 327681, 2, 65537, 327682, 2, 65537, 327683, 2, 65537, 327684, 2, 65537, 327685, 2, 65537, 327686, 2, 65538, 327693, 2, 65536, 327694, 2, 65537, 327695, 2, 65537, 327696, 2, 65537, 327697, 2, 65537, 327698, 2, 65537, 327699, 2, 65537, 327700, 2, 65537, 327701, 2, 65537, 327702, 2, 65537, 327703, 2, 65537, 327704, 2, 65537, 327705, 2, 65537, 327706, 2, 65537, 327707, 2, 65537, 327708, 2, 65537, 327709, 2, 65538, 327722, 2, 65536, 327723, 2, 65537, 327724, 2, 65537, 327725, 2, 65537, 327726, 2, 65537, 327727, 2, 65538, 458751, 2, 65536, 393216, 2, 65537, 393217, 2, 65537, 393218, 2, 65537, 393219, 2, 65537, 393220, 2, 65537, 393221, 2, 65537, 393222, 2, 65538, 393229, 2, 65536, 393230, 2, 65537, 393231, 2, 65537, 393232, 2, 65537, 393233, 2, 65537, 393234, 2, 65537, 393235, 2, 65537, 393236, 2, 65537, 393237, 2, 65537, 393238, 2, 65537, 393239, 2, 65537, 393240, 2, 65537, 393241, 2, 65537, 393242, 2, 65537, 393243, 2, 65537, 393244, 2, 65537, 393245, 2, 65538, 393258, 2, 65536, 393259, 2, 65537, 393260, 2, 65537, 393261, 2, 65537, 393262, 2, 65537, 393263, 2, 65538, 524287, 2, 65536, 458752, 2, 65537, 458753, 2, 65537, 458754, 2, 65537, 458755, 2, 65537, 458756, 2, 65537, 458757, 2, 65537, 458758, 2, 65538, 458765, 2, 65536, 458766, 2, 65537, 458767, 2, 65537, 458768, 2, 65537, 458769, 2, 65537, 458770, 2, 65537, 458771, 2, 65537, 458772, 2, 65537, 458773, 2, 65537, 458774, 2, 65537, 458775, 2, 65537, 458776, 2, 65537, 458777, 2, 65537, 458778, 2, 65537, 458779, 2, 65537, 458780, 2, 65537, 458781, 2, 65538, 458794, 2, 65536, 458795, 2, 65537, 458796, 2, 65537, 458797, 2, 65537, 458798, 2, 65537, 458799, 2, 65538, 589823, 2, 131072, 524288, 2, 131073, 524289, 2, 131073, 524290, 2, 131073, 524291, 2, 131073, 524292, 2, 131073, 524293, 2, 131073, 524294, 2, 131074, 524301, 2, 131072, 524302, 2, 131073, 524303, 2, 131073, 524304, 2, 131073, 524305, 2, 131073, 524306, 2, 131073, 524307, 2, 131073, 524308, 2, 131073, 524309, 2, 131073, 524310, 2, 131073, 524311, 2, 131073, 524312, 2, 131073, 524313, 2, 131073, 524314, 2, 131073, 524315, 2, 131073, 524316, 2, 131073, 524317, 2, 131074, 524330, 2, 131072, 524331, 2, 131073, 524332, 2, 131073, 524333, 2, 131073, 524334, 2, 131073, 524335, 2, 131074 )
+
+[node name="HotTimesInLavalavaCourse" parent="." index="4" instance=ExtResource( 2 )]
+position = Vector2( 480, 224 )
+
+[node name="HotTimesInLavalavaCourse2" parent="." index="5" instance=ExtResource( 2 )]
+position = Vector2( 544, 224 )
+
+[node name="HotTimesInLavalavaCourse3" parent="." index="6" instance=ExtResource( 2 )]
+position = Vector2( 608, 224 )
+
+[node name="HotTimesInLavalavaCourse4" parent="." index="7" instance=ExtResource( 2 )]
+position = Vector2( 672, 224 )
+
+[node name="HotTimesInLavalavaCourse5" parent="." index="8" instance=ExtResource( 2 )]
+position = Vector2( 736, 224 )
+
+[node name="HotTimesInLavalavaCourse6" parent="." index="9" instance=ExtResource( 2 )]
+position = Vector2( 800, 224 )
+
+[node name="HotTimesInLavalavaCourse7" parent="." index="10" instance=ExtResource( 2 )]
+position = Vector2( 1952, 160 )
+
+[node name="HotTimesInLavalavaCourse8" parent="." index="11" instance=ExtResource( 2 )]
+position = Vector2( 2016, 160 )
+
+[node name="HotTimesInLavalavaCourse9" parent="." index="12" instance=ExtResource( 2 )]
+position = Vector2( 2080, 160 )
+
+[node name="HotTimesInLavalavaCourse10" parent="." index="13" instance=ExtResource( 2 )]
+position = Vector2( 2144, 160 )
+
+[node name="HotTimesInLavalavaCourse11" parent="." index="14" instance=ExtResource( 2 )]
+position = Vector2( 2208, 160 )
+
+[node name="HotTimesInLavalavaCourse12" parent="." index="15" instance=ExtResource( 2 )]
+position = Vector2( 2272, 160 )
+
+[node name="HotTimesInLavalavaCourse13" parent="." index="16" instance=ExtResource( 2 )]
+position = Vector2( 2336, 160 )
+
+[node name="HotTimesInLavalavaCourse14" parent="." index="17" instance=ExtResource( 2 )]
+position = Vector2( 2400, 160 )
+
+[node name="HotTimesInLavalavaCourse15" parent="." index="18" instance=ExtResource( 2 )]
+position = Vector2( 2464, 160 )
+
+[node name="HotTimesInLavalavaCourse16" parent="." index="19" instance=ExtResource( 2 )]
+position = Vector2( 2528, 160 )
+
+[node name="HotTimesInLavalavaCourse17" parent="." index="20" instance=ExtResource( 2 )]
+position = Vector2( 2592, 160 )
+
+[node name="HotTimesInLavalavaCourse18" parent="." index="21" instance=ExtResource( 2 )]
+position = Vector2( 2656, 160 )
+
+[node name="Empty" type="Sprite" parent="." index="22"]
+position = Vector2( 640, 416 )
+scale = Vector2( 1.5, 1.25 )
+texture = ExtResource( 3 )
+
+[node name="Empty2" type="Sprite" parent="." index="23"]
+position = Vector2( 2304, 384 )
+scale = Vector2( 3, 1.5 )
+texture = ExtResource( 3 )
+
+[node name="SUB AREA" parent="." index="24" instance=ExtResource( 5 )]
+position = Vector2( 1280, 96 )
+scale = Vector2( 2, 2 )
+target_level_path = "res://BubblesToPlay/Level4.tscn"
+
+[node name="SUB AREA2" parent="." index="25" instance=ExtResource( 5 )]
+position = Vector2( 1536, 96 )
+scale = Vector2( 2, 2 )
+target_level_path = "res://BubblesToPlay/Level4-2.tscn"
+
+[node name="SUB AREA3" parent="." index="26" instance=ExtResource( 5 )]
+position = Vector2( 1792, 96 )
+scale = Vector2( 2, 2 )
+target_level_path = "res://BubblesToPlay/Level4.tscn"
+
+[node name="Bike" parent="." index="27" instance=ExtResource( 6 )]
+position = Vector2( -2112, 576 )
+
+[node name="Dwomb" parent="." index="28" instance=ExtResource( 7 )]
+position = Vector2( 1152, -256 )
+
+[node name="Dwomb2" parent="." index="29" instance=ExtResource( 7 )]
+position = Vector2( 1408, -256 )
+
+[node name="Dwomb3" parent="." index="30" instance=ExtResource( 7 )]
+position = Vector2( 1664, -256 )
+
+[node name="Label" type="Label" parent="." index="31"]
+margin_left = 288.0
+margin_right = 436.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 10 )
+text = "It's Time to Pick A Path"
+align = 1
+
+[node name="Label3" type="Label" parent="." index="32"]
+margin_left = 1440.0
+margin_top = -128.0
+margin_right = 1588.0
+margin_bottom = -114.0
+custom_fonts/font = ExtResource( 10 )
+text = "Auto Thwomps Be Like"
+align = 1
+
+[node name="Label2" type="Label" parent="." index="33"]
+margin_left = 2432.0
+margin_top = 64.0
+margin_right = 2586.0
+margin_bottom = 78.0
+custom_fonts/font = ExtResource( 10 )
+text = "What the Hell You Did it"
+align = 1
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." index="34"]
+stream = ExtResource( 8 )
+volume_db = 16.0
+max_distance = 1e+08
+
+[node name="Label16" type="Label" parent="." index="36"]
+margin_left = 24.0
+margin_top = 39.0
+margin_right = 70.0
+margin_bottom = 53.0
+rect_rotation = -6.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "Level 4"
+align = 1
+
+[node name="Ichara" type="Sprite" parent="." index="37"]
+position = Vector2( 64, 64 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 9 )

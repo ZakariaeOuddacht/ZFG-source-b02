@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://InTEMAcTABles/SUB AREA.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Spacetoon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BubblePasswords/LevelLAVA.gd" type="Script" id=3]
+
+[node name="FixTransusformsBug" instance=ExtResource( 2 )]
+position = Vector2( 832, 224 )
+script = ExtResource( 3 )
+
+[node name="Player" parent="." index="0"]
+MAX_SPEED = 400
+ACCELERATION = 2000
+FRICTION = 2000
+GRAVITY = 2000
+
+[node name="Camera2D" parent="." index="1"]
+current = false
+
+[node name="TileMap" parent="." index="3"]
+tile_data = PoolIntArray( -131072, 0, 0, -131071, 0, 1, -131070, 0, 1, -131069, 0, 1, -131068, 0, 1, -131067, 0, 2, -65536, 0, 65536, -65535, 0, 196610, -65534, 0, 131073, -65533, 0, 131073, -65532, 0, 196609, -65531, 0, 65538, 0, 0, 65536, 1, 0, 65538, 4, 0, 65536, 5, 0, 65538, 65536, 0, 65536, 65537, 0, 3, 65538, 0, 1, 65539, 0, 1, 65540, 0, 4, 65541, 0, 65538, 131072, 0, 131072, 131073, 0, 131073, 131074, 0, 131073, 131075, 0, 131073, 131076, 0, 131073, 131077, 0, 131074 )
+
+[node name="SUB AREA" parent="." index="4" instance=ExtResource( 1 )]
+position = Vector2( 192, 32 )
+target_level_path = "res://Disclamierrrrrrrrrrrr++.tscn"

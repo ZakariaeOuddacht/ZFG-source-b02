@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/OUCH.ogg-d5a676f8132a9be85899ccb58b17f48b.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/OUCH.ogg"
+dest_files=[ "res://.import/OUCH.ogg-d5a676f8132a9be85899ccb58b17f48b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/HurryUpAlready.ogg-4567f29e7105c68d868cca3188fae7f8.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/HurryUpAlready.ogg"
+dest_files=[ "res://.import/HurryUpAlready.ogg-4567f29e7105c68d868cca3188fae7f8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

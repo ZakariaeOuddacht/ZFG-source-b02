@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SPEEN.ogg-df031c2f627b11b84c2a0fc969386b3b.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/SPEEN.ogg"
+dest_files=[ "res://.import/SPEEN.ogg-df031c2f627b11b84c2a0fc969386b3b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

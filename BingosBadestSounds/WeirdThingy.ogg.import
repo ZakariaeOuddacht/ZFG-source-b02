@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/WeirdThingy.ogg-e3bb853757f56a93a5f3558e941b439e.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/WeirdThingy.ogg"
+dest_files=[ "res://.import/WeirdThingy.ogg-e3bb853757f56a93a5f3558e941b439e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

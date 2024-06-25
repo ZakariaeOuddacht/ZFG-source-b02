@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Joump2.ogg-074997e577e3a277f20edea44512ca00.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/Joump2.ogg"
+dest_files=[ "res://.import/Joump2.ogg-074997e577e3a277f20edea44512ca00.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

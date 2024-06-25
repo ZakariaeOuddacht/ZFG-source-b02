@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SussyMusic.ogg-03774308e2cf9799482b40d496b56544.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/SussyMusic.ogg"
+dest_files=[ "res://.import/SussyMusic.ogg-03774308e2cf9799482b40d496b56544.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

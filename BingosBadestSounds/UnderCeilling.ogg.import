@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/UnderCeilling.ogg-04cf0b7edd9d7849e76cb02b40f86485.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/UnderCeilling.ogg"
+dest_files=[ "res://.import/UnderCeilling.ogg-04cf0b7edd9d7849e76cb02b40f86485.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

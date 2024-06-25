@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/VSloop.ogg-0d811169eb84e837042087c5e5636a22.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/VSloop.ogg"
+dest_files=[ "res://.import/VSloop.ogg-0d811169eb84e837042087c5e5636a22.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

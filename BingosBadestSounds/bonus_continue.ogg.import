@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bonus_continue.ogg-dbb48d871007ec48867a5f33d659aecc.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/bonus_continue.ogg"
+dest_files=[ "res://.import/bonus_continue.ogg-dbb48d871007ec48867a5f33d659aecc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

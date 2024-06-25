@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/VineBoom.mp3-68db45a539618da4208d47d3207eebe8.mp3str"
+
+[deps]
+
+source_file="res://BingosBadestSounds/VineBoom.mp3"
+dest_files=[ "res://.import/VineBoom.mp3-68db45a539618da4208d47d3207eebe8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/GoofyElectricity.ogg-1445035275fc00abae5d09ba5690fa87.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/GoofyElectricity.ogg"
+dest_files=[ "res://.import/GoofyElectricity.ogg-1445035275fc00abae5d09ba5690fa87.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

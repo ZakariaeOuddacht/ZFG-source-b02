@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/KickTheBuddy.ogg-0becb731549966ea71ae2ae1bb1b73ee.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/KickTheBuddy.ogg"
+dest_files=[ "res://.import/KickTheBuddy.ogg-0becb731549966ea71ae2ae1bb1b73ee.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

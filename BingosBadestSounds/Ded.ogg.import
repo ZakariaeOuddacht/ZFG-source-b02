@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Ded.ogg-b2374a3d96f03e40af869497042796af.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/Ded.ogg"
+dest_files=[ "res://.import/Ded.ogg-b2374a3d96f03e40af869497042796af.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

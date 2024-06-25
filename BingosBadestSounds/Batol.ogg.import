@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Batol.ogg-915aa3cf79415f55db5423afc03f2636.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/Batol.ogg"
+dest_files=[ "res://.import/Batol.ogg-915aa3cf79415f55db5423afc03f2636.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

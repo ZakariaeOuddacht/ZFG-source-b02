@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/VSstart.ogg-de78e65065589411f3ef330ec9581ce5.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/VSstart.ogg"
+dest_files=[ "res://.import/VSstart.ogg-de78e65065589411f3ef330ec9581ce5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

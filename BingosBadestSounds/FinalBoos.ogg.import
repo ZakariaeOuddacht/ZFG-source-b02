@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/FinalBoos.ogg-59416c8cd6713aaf73d108e92e824ef5.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/FinalBoos.ogg"
+dest_files=[ "res://.import/FinalBoos.ogg-59416c8cd6713aaf73d108e92e824ef5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

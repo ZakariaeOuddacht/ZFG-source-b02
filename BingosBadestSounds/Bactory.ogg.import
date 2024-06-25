@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Bactory.ogg-1f1df6d3d3de8a1e905f971f2a2c81b6.oggstr"
+
+[deps]
+
+source_file="res://BingosBadestSounds/Bactory.ogg"
+dest_files=[ "res://.import/Bactory.ogg-1f1df6d3d3de8a1e905f971f2a2c81b6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

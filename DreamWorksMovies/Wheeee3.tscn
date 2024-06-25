@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://DreamWorksMovies/Wheeee3.webm" type="VideoStream" id=1]
+[ext_resource path="res://DreamWorksMovies/FinishMovie.gd" type="Script" id=2]
+[ext_resource path="res://HUH1.png" type="Texture" id=3]
+[ext_resource path="res://font21.tres" type="DynamicFont" id=4]
+
+[node name="Wheeee3" type="Node2D"]
+script = ExtResource( 2 )
+target_level_path = "res://BubblesToPlay/Level9.tscn"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="CanvasLayer"]
+margin_left = 128.0
+margin_top = 128.0
+margin_right = 849.0
+margin_bottom = 849.0
+stream = ExtResource( 1 )
+autoplay = true
+expand = false
+
+[node name="Butt" type="Button" parent="CanvasLayer"]
+margin_left = 544.0
+margin_top = 640.0
+margin_right = 704.0
+margin_bottom = 704.0
+text = "Skip"
+icon = ExtResource( 3 )
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
+margin_right = 736.0
+margin_bottom = 736.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+margin_left = 288.0
+margin_top = 256.0
+margin_right = 473.0
+margin_bottom = 285.0
+custom_fonts/font = ExtResource( 4 )
+text = "Glitches Everywhere"
+align = 1
+
+[connection signal="pressed" from="CanvasLayer/Butt" to="." method="_on_Butt_pressed"]

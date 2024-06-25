@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DreamWorksMovies/FinishMovie.gd" type="Script" id=1]
+[ext_resource path="res://DreamWorksMovies/BABYRedBall.webm" type="VideoStream" id=2]
+
+[node name="BABYRedBall" type="Node2D"]
+script = ExtResource( 1 )
+target_level_path = "res://BubblesToPlay/Level7-3.tscn"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="CanvasLayer"]
+margin_left = 128.0
+margin_top = 128.0
+margin_right = 800.0
+margin_bottom = 800.0
+stream = ExtResource( 2 )
+autoplay = true
+expand = false
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
+margin_right = 736.0
+margin_bottom = 736.0
+color = Color( 0, 0, 0, 1 )

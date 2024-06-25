@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://MAMAnimasionsForBuyer/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://BubblePasswords/LevelGround.gd" type="Script" id=2]
+[ext_resource path="res://TileMap.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ExtraTheatre/Pause.tscn" type="PackedScene" id=4]
+
+[node name="Spacetoon" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 192, 64 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 192, 32 )
+current = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TileMap" parent="." instance=ExtResource( 3 )]
+
+[node name="Pause" parent="." instance=ExtResource( 4 )]

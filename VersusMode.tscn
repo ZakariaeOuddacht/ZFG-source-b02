@@ -1,0 +1,341 @@
+[gd_scene load_steps=42 format=2]
+
+[ext_resource path="res://TileMap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://MAMAnimasionsForBuyer/Player2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MAMAnimasionsForBuyer/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://InTEMAcTABles/SoupStarIsMoney.png" type="Texture" id=4]
+[ext_resource path="res://BubblePasswords/LevelCoop.gd" type="Script" id=5]
+[ext_resource path="res://BingosBadestSounds/Ded.ogg" type="AudioStream" id=6]
+[ext_resource path="res://font21.tres" type="DynamicFont" id=7]
+[ext_resource path="res://InTEMAcTABles/Soupr.gd" type="Script" id=8]
+[ext_resource path="res://InTEMAcTABles/TheMoneyIsSoupStarVS.tscn" type="PackedScene" id=9]
+[ext_resource path="res://InTEMAcTABles/Soupg.gd" type="Script" id=10]
+[ext_resource path="res://REAL BUTT ENEMIES/HitBoux.tscn" type="PackedScene" id=11]
+[ext_resource path="res://BingosBadestSounds/VSstart.ogg" type="AudioStream" id=12]
+[ext_resource path="res://BingosBadestSounds/VSloop.ogg" type="AudioStream" id=13]
+[ext_resource path="res://REAL BUTT ENEMIES/Wahchon.tscn" type="PackedScene" id=14]
+[ext_resource path="res://REAL BUTT ENEMIES/Gigtric.tscn" type="PackedScene" id=15]
+[ext_resource path="res://REAL BUTT ENEMIES/Bike.tscn" type="PackedScene" id=16]
+[ext_resource path="res://MAMAnimasionsForBuyer/RedBallWalk.png" type="Texture" id=17]
+[ext_resource path="res://MAMAnimasionsForBuyer/GoldenBallWalk.png" type="Texture" id=18]
+[ext_resource path="res://Write.exe/SEGOEUI.TTF" type="DynamicFontData" id=19]
+[ext_resource path="res://BingosBadestSounds/RealFault.ogg" type="AudioStream" id=20]
+[ext_resource path="res://BingosBadestSounds/VersusClear.ogg" type="AudioStream" id=21]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 17 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 17 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 17 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 17 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 17 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 17 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 8 ), SubResource( 7 ), SubResource( 6 ), SubResource( 5 ), SubResource( 4 ) ],
+"loop": true,
+"name": "Red Ball",
+"speed": 12.0
+} ]
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 18 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 18 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 18 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 18 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 18 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 18 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 18 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 16 ), SubResource( 15 ), SubResource( 14 ), SubResource( 13 ), SubResource( 12 ) ],
+"loop": true,
+"name": "Golden Ball",
+"speed": 12.0
+} ]
+
+[sub_resource type="DynamicFont" id=19]
+size = 64
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 64
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 19 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2112, 64 )
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, -128, 0, 0, 0, 0, 0, -128, 96, 0, 0, 0, 0, 32, 96, 0, 0, 0, 0, 32, 0 )
+}
+
+[node name="RBvsGB" type="Node2D"]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -192.0, -640.0, -64.0, -192.0 ],
+"_edit_vertical_guides_": [ 1792.0, -1472.0, -1920.0, 320.0, 320.0 ]
+}
+
+[node name="HUD" type="CanvasLayer" parent="."]
+pause_mode = 2
+
+[node name="RichTextLabel" type="Label" parent="HUD"]
+pause_mode = 2
+margin_left = 72.0
+margin_top = 64.0
+margin_right = 328.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 7 )
+text = "x 0"
+script = ExtResource( 8 )
+
+[node name="RichTextLabel2" type="Label" parent="HUD"]
+pause_mode = 2
+margin_left = 408.0
+margin_top = 64.0
+margin_right = 664.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 7 )
+text = "0 x"
+align = 2
+script = ExtResource( 10 )
+
+[node name="SoupStarIsMoney" type="Sprite" parent="HUD"]
+pause_mode = 2
+position = Vector2( 32, 64 )
+texture = ExtResource( 4 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="SoupStarIsMoney2" type="Sprite" parent="HUD"]
+pause_mode = 2
+position = Vector2( 672, 64 )
+texture = ExtResource( 4 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="HUD"]
+pause_mode = 2
+position = Vector2( 64, 128 )
+scale = Vector2( -1, 1 )
+frames = SubResource( 10 )
+animation = "Red Ball"
+frame = 11
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="HUD"]
+pause_mode = 2
+position = Vector2( 672, 128 )
+frames = SubResource( 18 )
+animation = "Golden Ball"
+frame = 9
+playing = true
+
+[node name="Label" type="Label" parent="HUD"]
+visible = false
+margin_left = 160.0
+margin_top = 288.0
+margin_right = 598.0
+margin_bottom = 375.0
+custom_fonts/font = SubResource( 19 )
+text = "Red Ball Wins!!!"
+
+[node name="Label2" type="Label" parent="HUD"]
+visible = false
+margin_left = 112.0
+margin_top = 288.0
+margin_right = 648.0
+margin_bottom = 375.0
+custom_fonts/font = SubResource( 20 )
+text = "Golden Ball Wins!!!"
+
+[node name="Timer" type="Timer" parent="HUD"]
+
+[node name="Button" type="Button" parent="HUD"]
+pause_mode = 1
+margin_left = 320.0
+margin_top = 64.0
+margin_right = 448.0
+margin_bottom = 128.0
+text = "Exit"
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( -64, 0 )
+
+[node name="Player2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64, 0 )
+
+[node name="TileMap" parent="." instance=ExtResource( 1 )]
+tile_data = PoolIntArray( -1048609, 6, 262147, -1048608, 6, 1, -1048607, 6, 1, -1048606, 6, 1, -1048605, 6, 1, -1048604, 6, 1, -1048603, 6, 1, -1048602, 6, 1, -1048601, 6, 1, -1048600, 6, 1, -1048599, 6, 1, -1048598, 6, 1, -1048597, 6, 1, -1048596, 6, 1, -1048595, 6, 1, -1048594, 6, 1, -1048593, 6, 1, -1048592, 6, 1, -1048591, 6, 1, -1048590, 6, 1, -1048589, 6, 1, -1048588, 6, 1, -1048587, 6, 1, -1048586, 6, 1, -1048585, 6, 1, -1048584, 6, 1, -1048583, 6, 1, -1048582, 6, 1, -1048581, 6, 1, -1048580, 6, 1, -1048579, 6, 1, -1048578, 6, 1, -1048577, 6, 1, -1114112, 6, 1, -1114111, 6, 1, -1114110, 6, 1, -1114109, 6, 1, -1114108, 6, 1, -1114107, 6, 1, -1114106, 6, 1, -1114105, 6, 1, -1114104, 6, 1, -1114103, 6, 1, -1114102, 6, 1, -1114101, 6, 1, -1114100, 6, 1, -1114099, 6, 1, -1114098, 6, 1, -1114097, 6, 1, -1114096, 6, 1, -1114095, 6, 1, -1114094, 6, 1, -1114093, 6, 1, -1114092, 6, 1, -1114091, 6, 1, -1114090, 6, 1, -1114089, 6, 1, -1114088, 6, 1, -1114087, 6, 1, -1114086, 6, 1, -1114085, 6, 1, -1114084, 6, 1, -1114083, 6, 1, -1114082, 6, 1, -1114081, 6, 1, -1114080, 6, 2, -983073, 6, 65536, -983072, 6, 196610, -983071, 6, 131073, -983070, 6, 131073, -983069, 6, 131073, -983068, 6, 131073, -983067, 6, 131073, -983066, 6, 131073, -983065, 6, 131073, -983064, 6, 131073, -983063, 6, 131073, -983062, 6, 131073, -983061, 6, 131073, -983060, 6, 131073, -983059, 6, 131073, -983058, 6, 131073, -983057, 6, 131073, -983056, 6, 131073, -983055, 6, 131073, -983054, 6, 131073, -983053, 6, 131073, -983052, 6, 131073, -983051, 6, 131073, -983050, 6, 131073, -983049, 6, 131073, -983048, 6, 131073, -983047, 6, 131073, -983046, 6, 131073, -983045, 6, 131073, -983044, 6, 131073, -983043, 6, 131073, -983042, 6, 131073, -983041, 6, 131073, -1048576, 6, 131073, -1048575, 6, 131073, -1048574, 6, 131073, -1048573, 6, 131073, -1048572, 6, 131073, -1048571, 6, 131073, -1048570, 6, 131073, -1048569, 6, 131073, -1048568, 6, 131073, -1048567, 6, 131073, -1048566, 6, 131073, -1048565, 6, 131073, -1048564, 6, 131073, -1048563, 6, 131073, -1048562, 6, 131073, -1048561, 6, 131073, -1048560, 6, 131073, -1048559, 6, 131073, -1048558, 6, 131073, -1048557, 6, 131073, -1048556, 6, 131073, -1048555, 6, 131073, -1048554, 6, 131073, -1048553, 6, 131073, -1048552, 6, 131073, -1048551, 6, 131073, -1048550, 6, 131073, -1048549, 6, 131073, -1048548, 6, 131073, -1048547, 6, 131073, -1048546, 6, 131073, -1048545, 6, 196609, -1048544, 6, 65538, -917537, 6, 65536, -917536, 6, 65538, -983009, 6, 65536, -983008, 6, 65538, -852001, 6, 65536, -852000, 6, 65538, -917473, 6, 65536, -917472, 6, 65538, -786465, 6, 65536, -786464, 6, 65538, -851937, 6, 65536, -851936, 6, 65538, -720929, 6, 65536, -720928, 6, 65538, -786401, 6, 65536, -786400, 6, 65538, -655393, 6, 65536, -655392, 6, 65538, -655377, 6, 262147, -655376, 6, 2, -655366, 6, 262147, -655365, 6, 2, -720865, 6, 65536, -720864, 6, 65538, -589857, 6, 65536, -589856, 6, 65538, -589841, 6, 65536, -589840, 6, 65538, -589830, 6, 65536, -589829, 6, 65538, -655329, 6, 65536, -655328, 6, 65538, -524321, 6, 65536, -524320, 6, 65538, -524305, 6, 131072, -524304, 6, 458754, -524303, 6, 262145, -524302, 6, 262145, -524301, 6, 262145, -524300, 6, 262145, -524299, 6, 262145, -524298, 6, 262145, -524297, 6, 262145, -524296, 6, 262145, -524295, 6, 262145, -524294, 6, 458753, -524293, 6, 131074, -589793, 6, 65536, -589792, 6, 65538, -458785, 6, 65536, -458784, 6, 65538, -458777, 6, 262147, -458776, 6, 1, -458775, 6, 1, -458774, 6, 2, -524257, 6, 65536, -524256, 6, 65538, -393249, 6, 65536, -393248, 6, 65538, -393241, 6, 131072, -393240, 6, 131073, -393239, 6, 131073, -393238, 6, 131074, -458721, 6, 65536, -458720, 6, 65538, -327713, 6, 65536, -327712, 6, 65538, -327696, 6, 262147, -327695, 6, 1, -327694, 6, 2, -393192, 6, 262147, -393191, 6, 1, -393190, 6, 1, -393189, 6, 1, -393188, 6, 1, -393187, 6, 1, -393186, 6, 1, -393185, 6, 4, -393184, 6, 65538, -262177, 6, 65536, -262176, 6, 65538, -262160, 6, 131072, -262159, 6, 131073, -262158, 6, 131074, -327661, 6, 262147, -327660, 6, 2, -327656, 6, 65536, -327655, 6, 65537, -327654, 6, 196610, -327653, 6, 131073, -327652, 6, 131073, -327651, 6, 196609, -327650, 6, 65537, -327649, 6, 65537, -327648, 6, 65538, -196641, 6, 65536, -196640, 6, 3, -196639, 6, 1, -196638, 6, 1, -196637, 6, 1, -196636, 6, 1, -196635, 6, 1, -196634, 6, 2, -196628, 4, 0, -196627, 4, 0, -196617, 4, 0, -262137, 4, 0, -262125, 6, 131072, -262124, 6, 131074, -262120, 6, 131072, -262119, 6, 196609, -262118, 6, 65538, -262115, 6, 65536, -262114, 6, 65537, -262113, 6, 65537, -262112, 6, 65538, -131105, 6, 65536, -131104, 6, 196610, -131103, 6, 131073, -131102, 6, 131073, -131101, 6, 131073, -131100, 6, 131073, -131099, 6, 131073, -131098, 6, 131074, -131092, 4, 0, -131091, 4, 0, -131090, 4, 0, -131084, 4, 0, -131083, 4, 0, -131082, 4, 0, -131081, 4, 0, -196602, 4, 0, -196601, 4, 0, -196593, 6, 262147, -196592, 6, 2, -196583, 6, 131072, -196582, 6, 131074, -196579, 6, 131072, -196578, 6, 131073, -196577, 6, 196609, -196576, 6, 65538, -65569, 6, 65536, -65568, 6, 65538, -65556, 4, 0, -65555, 4, 0, -65554, 4, 0, -65553, 4, 0, -65542, 6, 262147, -65541, 6, 2, -131067, 4, 0, -131066, 4, 0, -131065, 4, 0, -131057, 6, 65536, -131056, 6, 65538, -131041, 6, 65536, -131040, 6, 65538, -33, 6, 65536, -32, 6, 65538, -20, 4, 0, -19, 4, 0, -18, 4, 0, -17, 4, 0, -16, 4, 0, -6, 6, 65536, -5, 6, 65538, -65532, 4, 0, -65531, 4, 0, -65530, 4, 0, -65529, 4, 0, -65521, 6, 65536, -65520, 6, 65538, -65512, 6, 262147, -65511, 6, 1, -65510, 6, 1, -65509, 6, 1, -65508, 6, 1, -65507, 6, 1, -65506, 6, 1, -65505, 6, 4, -65504, 6, 65538, 65503, 6, 65536, 65504, 6, 3, 65505, 6, 1, 65506, 6, 1, 65507, 6, 1, 65508, 6, 1, 65509, 6, 1, 65510, 6, 1, 65511, 6, 1, 65512, 6, 2, 65516, 6, 262147, 65517, 6, 1, 65518, 6, 1, 65519, 6, 1, 65520, 6, 1, 65521, 6, 1, 65522, 6, 1, 65523, 6, 1, 65524, 6, 1, 65525, 6, 1, 65526, 6, 1, 65527, 6, 1, 65528, 6, 1, 65529, 6, 1, 65530, 6, 4, 65531, 6, 3, 65532, 6, 1, 65533, 6, 1, 65534, 6, 1, 65535, 6, 1, 0, 6, 1, 1, 6, 1, 2, 6, 1, 3, 6, 1, 4, 6, 1, 5, 6, 1, 6, 6, 1, 7, 6, 2, 11, 6, 262147, 12, 6, 1, 13, 6, 1, 14, 6, 1, 15, 6, 4, 16, 6, 3, 17, 6, 1, 18, 6, 1, 19, 6, 1, 20, 6, 1, 21, 6, 1, 22, 6, 1, 23, 6, 1, 24, 6, 4, 25, 6, 65537, 26, 6, 65537, 27, 6, 65537, 28, 6, 65537, 29, 6, 65537, 30, 6, 65537, 31, 6, 65537, 32, 6, 65538, 131039, 6, 131072, 131040, 6, 131073, 131041, 6, 131073, 131042, 6, 131073, 131043, 6, 131073, 131044, 6, 131073, 131045, 6, 131073, 131046, 6, 131073, 131047, 6, 131073, 131048, 6, 131074, 131052, 6, 131072, 131053, 6, 131073, 131054, 6, 131073, 131055, 6, 131073, 131056, 6, 131073, 131057, 6, 131073, 131058, 6, 131073, 131059, 6, 131073, 131060, 6, 131073, 131061, 6, 131073, 131062, 6, 131073, 131063, 6, 131073, 131064, 6, 131073, 131065, 6, 131073, 131066, 6, 131073, 131067, 6, 131073, 131068, 6, 131073, 131069, 6, 131073, 131070, 6, 131073, 131071, 6, 131073, 65536, 6, 131073, 65537, 6, 131073, 65538, 6, 131073, 65539, 6, 131073, 65540, 6, 131073, 65541, 6, 131073, 65542, 6, 131073, 65543, 6, 131074, 65547, 6, 131072, 65548, 6, 131073, 65549, 6, 131073, 65550, 6, 131073, 65551, 6, 131073, 65552, 6, 131073, 65553, 6, 131073, 65554, 6, 131073, 65555, 6, 131073, 65556, 6, 131073, 65557, 6, 131073, 65558, 6, 131073, 65559, 6, 131073, 65560, 6, 131073, 65561, 6, 131073, 65562, 6, 131073, 65563, 6, 131073, 65564, 6, 131073, 65565, 6, 131073, 65566, 6, 131073, 65567, 6, 131073, 65568, 6, 131074 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="StarCoin" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1696, -4192 )
+
+[node name="StarCoin2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 416, -4048 )
+
+[node name="HitBoux" parent="." instance=ExtResource( 11 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoux"]
+position = Vector2( 0, 320 )
+shape = SubResource( 1 )
+
+[node name="Start" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -2560, 320 )
+stream = ExtResource( 12 )
+volume_db = 2.0
+autoplay = true
+max_distance = 1e+07
+
+[node name="Loop" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -2560, 320 )
+stream = ExtResource( 13 )
+volume_db = 2.0
+max_distance = 1e+07
+
+[node name="Finish" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+position = Vector2( -2560, 320 )
+stream = ExtResource( 21 )
+volume_db = 2.0
+max_distance = 1e+07
+
+[node name="Bike" parent="." instance=ExtResource( 16 )]
+position = Vector2( -1008, -384 )
+
+[node name="Bike2" parent="." instance=ExtResource( 16 )]
+position = Vector2( -944, -384 )
+
+[node name="Bike3" parent="." instance=ExtResource( 16 )]
+position = Vector2( -880, -384 )
+
+[node name="Wahchon" parent="." instance=ExtResource( 14 )]
+position = Vector2( -672, -608 )
+
+[node name="Gigtric" parent="." instance=ExtResource( 15 )]
+position = Vector2( -1376, -544 )
+curve = SubResource( 2 )
+
+[node name="Bike4" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1952, -384 )
+
+[node name="Bike5" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1536, -384 )
+
+[node name="Bike6" parent="." instance=ExtResource( 16 )]
+position = Vector2( -288, -704 )
+
+[node name="Bike7" parent="." instance=ExtResource( 16 )]
+position = Vector2( -992, -704 )
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+max_distance = 1e+07
+
+[node name="Quit" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+stream = ExtResource( 20 )
+max_distance = 1e+07
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -64, 0 )
+current = true
+limit_left = -2048
+limit_top = -1024
+limit_right = 2048
+limit_bottom = 72
+smoothing_enabled = true
+smoothing_speed = 10.0
+editor_draw_limits = true
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2( -64, 0 )
+limit_left = -2048
+limit_top = -1024
+limit_right = 2048
+limit_bottom = 72
+smoothing_enabled = true
+smoothing_speed = 10.0
+editor_draw_limits = true
+
+[node name="StarCoin3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 992, -4176 )
+
+[node name="StarCoin4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1024, -4144 )
+
+[node name="StarCoin5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 992, -4112 )
+
+[node name="StarCoin6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 960, -4144 )
+
+[node name="StarCoin7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 992, -4144 )
+
+[node name="StarCoin8" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1056, -4208 )
+
+[node name="StarCoin9" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1088, -4176 )
+
+[node name="StarCoin10" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1056, -4144 )
+
+[node name="StarCoin11" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1024, -4176 )
+
+[node name="StarCoin12" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1056, -4176 )
+
+[connection signal="pressed" from="HUD/Button" to="." method="_on_Button_pressed"]
+[connection signal="finished" from="Start" to="." method="_on_Start_finished"]

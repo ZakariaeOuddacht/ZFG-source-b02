@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://ExtraTheatre/VersusStart.gd" type="Script" id=1]
+[ext_resource path="res://font16.tres" type="DynamicFont" id=2]
+[ext_resource path="res://font24.tres" type="DynamicFont" id=3]
+[ext_resource path="res://HUH1.png" type="Texture" id=4]
+
+[sub_resource type="InputEventAction" id=5]
+action = "ui_cancel"
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 5 )
+
+[sub_resource type="InputEventAction" id=6]
+action = "ui_accept"
+
+[sub_resource type="ShortCut" id=4]
+shortcut = SubResource( 6 )
+
+[node name="VersusStart" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 160.0
+margin_bottom = 96.0
+shortcut = SubResource( 2 )
+text = "Back"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 32.0
+margin_top = 576.0
+margin_right = 224.0
+margin_bottom = 672.0
+custom_fonts/font = ExtResource( 3 )
+shortcut = SubResource( 4 )
+text = "Start"
+icon = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 32.0
+margin_top = 128.0
+margin_right = 672.0
+margin_bottom = 576.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+text = "Welcome to Versus Mode!
+Play The Mode With your Brother, Sister or Your Friend! Get 10 Star Coins to Win.
+
+Player 2 Controls:
+
+Arrow Keys: Move
+Number 1 Key: Jump
+Number 2 Key: Sprint (Run)
+
+NO PAUSE HERE BTW
+If The Player 1 Dies, The Player 2 Gets The Camera
+Else if P2 Dies, P1 Gets The Camera
+Anyways P1 Gets The Camera By Default.
+
+If You Hear a Sparkle Sound, Means You're Close to The Coin
+Every Star Coin Appeared Will Disappear after 30 seconds."
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
